@@ -21,3 +21,9 @@ BACK
 
 - Serveur PHP
 - Base de donnée en SQL (mySql)
+
+-------------------------------------------------------------
+
+Alexis futur tdg (le plus dur)
+Charles-André dev front/back (le plus facile env 100 sur par jour) (surtout front)
+Maxime on le cherche, faites moi signe (je crois qu'il fait la base de données)
