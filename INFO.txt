@@ -1,0 +1,23 @@
+PROJET WEB SERVEUR 2
+
+EQUIPE : Charles-André, Maxime, Alexis
+
+-------------------------------------------------------------
+
+PROJET : création d'un site avec base de donnée sur serveur
+
+SOLUTION CHOISIE : site type Leboncoin (achat/revente entre utilisateur)
+
+-------------------------------------------------------------
+
+FRONT 
+
+- Utilisation de templates bootstrap
+- HTML / CSS
+
+-------------------------------------------------------------
+
+BACK
+
+- Serveur PHP
+- Base de donnée en SQL (mySql)
