@@ -481,6 +481,7 @@ li > a:only-child:after {
 .main-sec {
     background: #74d2e7;
     min-height: 43em;
+    height: 100vh;
     position: relative;
 }
 
