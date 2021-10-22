@@ -2,7 +2,7 @@
 
 Requirement :
 - install wamp
-- install https://www.sqlite.org/download.html including the command-line shell
+- install https://www.sqlite.org/download.html including the command-line shell https://www.sqlite.org/2021/sqlite-tools-win32-x86-3360000.zip
 
 Initialise database : 
 connect to the url http://projetwebserv2/src/init_database
