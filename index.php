@@ -2,6 +2,7 @@
 session_start();
 
 function render($view) {
+	global $controller;
 	require('views/header.php');
 	require('views/'.$view.'.php');
 }

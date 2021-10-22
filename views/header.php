@@ -30,37 +30,38 @@
     <!-- //Fonts -->
 </head>
 
-<header class="py-sm-3 pt-3 pb-2" id="home">
-    <div class="container">
-        <!-- nav -->
-        <div class="top-w3pvt d-flex">
-            <div id="logo">
-                <h1> <a href="index.php?controller=home"><span class="log-w3pvt">B</span>aggage</a> <label class="sub-des">Online Store</label></h1>
-            </div>
+<body>
+    <header class="py-sm-3 pt-3 pb-2 header" id="home">
+        <div class="container">
+            <!-- nav -->
+            <div class="top-w3pvt d-flex">
+                <div id="logo">
+                    <h1> <a href="index.php?controller=home"><span class="log-w3pvt">B</span>aggage</a> <label class="sub-des">Online Store</label></h1>
+                </div>
 
-            <div class="forms ml-auto">
-                <a href="index.php?controller=login" class="btn"><span class="fa fa-user-circle-o"></span> Sign In</a>
-                <a href="index.php?controller=register" class="btn"><span class="fa fa-pencil-square-o"></span> Sign Up</a>
+                <div class="forms ml-auto">
+                    <a href="index.php?controller=login" class="btn"><span class="fa fa-user-circle-o"></span> Sign In</a>
+                    <a href="index.php?controller=register" class="btn"><span class="fa fa-pencil-square-o"></span> Sign Up</a>
+                </div>
+            </div>
+            <div class="nav-top-wthree">
+                <nav>
+                    <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+                    <input type="checkbox" id="drop" />
+                    <ul class="menu">
+                        <?php foreach([
+                            ['controller' => 'home', 'label' => 'Home'],
+                            ['controller' => 'shop', 'label' => 'Shop'],
+                        ] as $item) {
+                        ?>
+                        
+                            <li <?php if ($item['controller'] == $controller) echo 'class="active"' ?>>
+                                <a href="index.php?controller=<?php echo $item['controller'] ?>"><?php echo $item['label'] ?></a></li>
+                        <?php } ?> 
+                    </ul>
+                </nav>
+                <!-- //nav -->
+                <div class="clearfix"></div>
             </div>
         </div>
-        <div class="nav-top-wthree">
-            <nav>
-                <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
-                <input type="checkbox" id="drop" />
-                <ul class="menu">
-                    <?php foreach([
-                        ['controller' => 'home', 'label' => 'Home'],
-                        ['controller' => 'shop', 'label' => 'Shop'],
-                        ['controller' => 'contact', 'label' => 'Contact Us']
-                    ] as $item) {
-                    ?>
-
-                        <li <?php if ($item['controller'] == $controller) echo 'class="active"' ?>><a href="index.php?controller=<?php echo $item['controller'] ?>"><?php echo $item['label'] ?></a></li>
-                    <?php } ?>
-                </ul>
-            </nav>
-            <!-- //nav -->
-            <div class="clearfix"></div>
-        </div>
-    </div>
-</header>
+    </header>
