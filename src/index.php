@@ -10,6 +10,10 @@ function render($view) {
     echo '-->';
 }
 
+function e($s) {
+    return htmlentites($s);
+}
+
 if(!isset($_GET['controller'])) {
 	$_GET['controller'] = "home";
 }

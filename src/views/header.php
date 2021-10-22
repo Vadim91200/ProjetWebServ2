@@ -42,7 +42,7 @@
                 ?>
     
             <div class="forms ml-auto">
-                    <?php echo('Welcome ' . $_SESSION['name']) ?>
+                    Welcome <?= e($_SESSION['name']); ?>
                     <a href="index.php?controller=home" class="btn"><?php $_SESSION['name'] = NULL ?> <span class="fa fa-pencil-square-o"></span> Disconnect </a>
                 </div>
     <?php

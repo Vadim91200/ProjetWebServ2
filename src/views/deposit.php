@@ -1,6 +1,4 @@
-    <!-- //banner-->
-    <!--/login -->
-    <section class="banner-bottom py-5">
+<section class="banner-bottom py-5">
         <div class="container">
             <div class="content-grid">
                 <div class="text-center icon">
@@ -39,10 +37,6 @@
                         </div>
                         <div class="content-input-field">
                             <button type="submit" class="btn">Sign Up</button>
-                        </div>
-                        <div class="list-login-bottom text-center mt-lg-5 mt-4">
-
-                            <a href="#" class="">By clicking Signup, I agree to your terms</a>
                         </div>
                     </form>
                 </div>
