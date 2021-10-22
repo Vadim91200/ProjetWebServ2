@@ -20,4 +20,8 @@ header('Location: index.php?controller=login&error=bad_login');
 
 
 $_SESSION['name'] = $_POST['prenom']
+
+$_SESSION['cart'] = [
+    12 => ['id' => 12, 'qty' => 5],
+]
 ?>
