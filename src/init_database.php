@@ -1,6 +1,6 @@
 <?php
 
-require('controllers/configbd.php');
+require('configbd.php');
 
 $pdo->query('CREATE TABLE user 
 ( 

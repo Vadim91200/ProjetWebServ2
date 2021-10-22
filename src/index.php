@@ -3,14 +3,19 @@ session_start();
 
 function render($view) {
 	global $controller;
-	require('views/header.php');
+        require('views/header.php');
 	require('views/'.$view.'.php');
+    echo '<!--';
+    print_r($_SESSION);
+    echo '-->';
 }
 
 if(!isset($_GET['controller'])) {
 	$_GET['controller'] = "home";
 }
 $controller = $_GET['controller'];
+
+include('configbd.php');
 
 require('controllers/'.$controller.'.php');
 

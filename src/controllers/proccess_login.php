@@ -1,6 +1,4 @@
 <?php
-session_start();
-include('configbd.php');
 
 $stmt = $pdo->prepare("SELECT * FROM user where email = ?");
 $stmt->execute([$_POST['username']]);
@@ -16,8 +14,7 @@ if (password_verify($res['password'], $_POST['password'])) {
     exit;
 }
 
+$_SESSION['name'] = $res['name'];
+$_SESSION['user'] = $res;
 header('Location: index.php?controller=home');
-
-
-$_SESSION['name'] = $_POST['prenom']
 ?>
