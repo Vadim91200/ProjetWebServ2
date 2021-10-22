@@ -38,12 +38,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 
 <body>
-    <div class="main-sec inner-page">
-        <!-- //header -->
-        <?php include 'header.php'; ?>
-        <!-- //header -->
-
-    </div>
 
     <!-- //banner-->
     <!--/login -->
