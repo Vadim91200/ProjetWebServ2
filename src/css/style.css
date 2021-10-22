@@ -763,6 +763,7 @@ h4.text-w3pvt {
 .content-grid {
     max-width: 500px;
     margin: 6em auto;
+    background-color: #74d2e7;
 }
 
 ul.links-unordered-list li.active a {
@@ -870,11 +871,15 @@ ul.list-login-bottom li:nth-child(2) {
 }
 
 /*/////////////// FORM STYLES ////////////////////*/
+.logo_form {
+    padding-top: 1em;
+}
+
+
 ul.list-login {
     margin-top: 1.5em;
     margin-bottom: 1em;
 }
-
 
 .content-input-field button.btn {
     background: #ec1c24;
@@ -929,7 +934,7 @@ ul.links-unordered-list li a {
     box-sizing: border-box;
     width: 100%;
     outline: none;
-    background: rgba(0, 123, 255, 0.06);
+    /*background: rgba(0, 123, 255, 0.06);*/
     margin-bottom: 20px;
     padding: 15px 20px;
     border-radius: 0px;
