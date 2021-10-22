@@ -7,7 +7,7 @@
                     <span class="fa fa-unlock-alt"></span>
                 </div>
                 <div class="content-bottom">
-                    <form action="proccess_login.php" method="post">
+                    <form action="index.php?controller=proccess_login" method="post">
                         <div class="field-group">
                             <div class="content-input-field">
                                 <input name="username" id="username" type="text" value="" placeholder="User Name" required="">

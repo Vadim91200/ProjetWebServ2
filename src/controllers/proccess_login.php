@@ -16,12 +16,8 @@ if (password_verify($res['password'], $_POST['password'])) {
     exit;
 }
 
-header('Location: index.php?controller=login&error=bad_login');
+header('Location: index.php?controller=home');
 
 
 $_SESSION['name'] = $_POST['prenom']
-
-$_SESSION['cart'] = [
-    12 => ['id' => 12, 'qty' => 5],
-]
 ?>
