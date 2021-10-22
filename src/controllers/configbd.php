@@ -1,5 +1,4 @@
 <?php
-
 $role = true;
 $dsn = "sqlite:database.sqlite";
 $options = [

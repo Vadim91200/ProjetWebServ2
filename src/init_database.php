@@ -1,17 +1,17 @@
 <?php
 
-require('configbd.php');
+require('controllers/configbd.php');
 
 $pdo->query('CREATE TABLE user 
-(
-    id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT, 
+( 
+    id INTEGER PRIMARY KEY AUTOINCREMENT, 
     surname VARCHAR(100) NOT NULL, 
     name VARCHAR(100) NOT NULL, 
     email VARCHAR(255) NOT NULL, 
     password VARCHAR(255) NOT NULL, 
-    phone VARCHAR(10) NOT NULL,
-    PRIMARY KEY (id)
-)');
+    phone VARCHAR(10) NOT NULL
+)
+');
 
 $pdo->query('CREATE TABLE product
 (

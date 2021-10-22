@@ -476,6 +476,9 @@ li > a:only-child:after {
 }
 
 /*-- //header --*/
+.header {
+    background: #74d2e7;
+}
 
 /*--banner--*/
 .main-sec {
