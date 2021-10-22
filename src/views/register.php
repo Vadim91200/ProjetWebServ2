@@ -4,7 +4,7 @@
         <div class="container">
             <div class="content-grid">
                 <div class="text-center icon">
-                    <span class="fa fa-user-circle-o"></span>
+                    <span class="fa fa-user-circle-o logo_form"></span>
                 </div>
                 <div class="content-bottom">
                     <form action="index.php?controller=proccess_register" method="post">
