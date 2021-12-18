@@ -2,10 +2,10 @@
 
 **Requirements :**
 - install Wamp on https://www.wampserver.com/#download-wrapper the 64 bits version
-- Configure your virtualhost : ![image](https://user-images.githubusercontent.com/75336673/146658107-7d963aaf-20cf-4d8e-ad1f-56d870ad2958.png)
+- Configure your virtualhost : 
 ![image](https://user-images.githubusercontent.com/75336673/146658129-f46f95ea-af78-4320-b6b2-a987c93ca9a5.png)
 ![image](https://user-images.githubusercontent.com/75336673/146658254-0024037e-f0ef-47ba-aac4-0a3ab11a5106.png)
-- install https://www.sqlite.org/download.html including the command-line shell https://www.sqlite.org/2021/sqlite-tools-win32-x86-3360000.zip (but we already did that for you so you need to do nothing)
+- install https://www.sqlite.org/download.html including the command-line shell https://www.sqlite.org/2021/sqlite-tools-win32-x86-3360000.zip (but we already did that for you so you have nothing to do)
 
 **Initialise database for the first time :** 
 connect to the url http://projetwebserv2/src/init_database
