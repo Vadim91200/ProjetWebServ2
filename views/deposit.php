@@ -27,7 +27,7 @@
                         <div class="field-group">
 
                             <div class="content-input-field">
-                                <input name="ProductCreationDate" id="text4" type="text" value="" placeholder="Product Creation date" required="">
+                                <input name="ProductCreationDate" id="text4" type="date" value="" placeholder="Product Creation date" required="">
                             </div>
                         </div>
                         <div class="content-input-field">

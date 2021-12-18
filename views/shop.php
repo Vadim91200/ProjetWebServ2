@@ -1,24 +1,8 @@
-<?php
-    $res = getproduct()
+<?php $res = getproduct();
+for ($i=0; $i < count($res); $i++) { 
+        echo $res['product_name'];
     ?>
-    <!-- //banner-->
-    <!--/banner-bottom -->
-    <section class="banner-bottom py-5">
-        <div class="container py-5">
-            <h3 class="title-wthree mb-lg-5 mb-4 text-center">Shop Now</h3>
-            <!--/row-->
-            while(list($product_id,$image,$product_name,$price)=mysqli_fetch_array($result))
-                        {
-                        echo "<tr><td><img src='../product_images/$image' style='width:50px; height:50px; border:groove #000'></td><td>$product_name</td>
-                        <td>$price</td>
-                        <td>
-
-                        <a class=' btn btn-success' href='clothes_list.php?product_id=$product_id&action=delete'>Delete</a>
-                        </td></tr>";
-                        }
-
-                
-            <div class="row shop-wthree-info text-center">
+    <div class="row shop-wthree-info text-center">
                 <div class="col-lg-3 shop-info-grid text-center mt-4">
                     <div class="product-shoe-info shoe">
                         <div class="men-thumb-item">
@@ -37,9 +21,14 @@
                         </div>
                     </div>
                 </div>
-                
-           
             </div>
+    <?php } ?> 
+    <!-- //banner-->
+    <!--/banner-bottom -->
+    <section class="banner-bottom py-5">
+        <div class="container py-5">
+            <h3 class="title-wthree mb-lg-5 mb-4 text-center">Shop Now</h3>
+            <!--/row-->
             <nav aria-label="Page navigation example mt-5">
                 <ul class="pagination">
                     <li class="page-item">
