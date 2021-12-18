@@ -61,6 +61,7 @@
                         <?php foreach([
                             ['controller' => 'home', 'label' => 'Home'],
                             ['controller' => 'shop', 'label' => 'Shop'],
+                            ['controller' => 'deposit', 'label' => 'New Product'],
                         ] as $item) {
                         ?>
                         

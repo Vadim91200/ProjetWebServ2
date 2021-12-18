@@ -1,6 +1,12 @@
 <?php
 session_start();
-
+function getproduct(){
+    require('configbd.php');
+    $stmt = $pdo->prepare("SELECT * FROM product");
+    $stmt->execute();
+    $res = $stmt->fetch();
+    return $res;
+}
 function render($view) {
 	global $controller;
         require('views/header.php');
@@ -19,6 +25,6 @@ if(!isset($_GET['controller'])) {
 }
 $controller = $_GET['controller'];
 
-include('configbd.php');
+require('configbd.php');
 
 require('controllers/'.$controller.'.php');

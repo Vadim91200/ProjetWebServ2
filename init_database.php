@@ -16,15 +16,16 @@ $pdo->query('CREATE TABLE user
 $pdo->query('CREATE TABLE product
 (
     id INTEGER PRIMARY KEY NOT NULL,
-    name_produit VARCHAR(100) NOT NULL,
-    description VARCHAR(255),
-    price INT NOT NULL,
+    product_image VARCHAR(100) NOT NULL,
+    product_name VARCHAR(100) NOT NULL,
+    product_description VARCHAR(255),
+    product_price INT NOT NULL,
     creation_date DATE NOT NULL
 )');
 
 $pdo->query('CREATE TABLE categorie
 (
     id INTEGER PRIMARY KEY NOT NULL,
-    nom_category VARCHAR(100) NOT NULL 
+    category_name VARCHAR(100) NOT NULL 
 );');
 ?>
