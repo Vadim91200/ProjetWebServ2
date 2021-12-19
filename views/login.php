@@ -49,7 +49,3 @@
         </div>
     </section>
     <!-- /login -->
-
-</body>
-
-</html>

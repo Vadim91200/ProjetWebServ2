@@ -148,5 +148,3 @@
         </div>
     </section>
     <!-- //gallery-->
-</body>
-</html>

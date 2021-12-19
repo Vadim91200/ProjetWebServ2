@@ -20,7 +20,7 @@ for ($i=0; $i < count($res); $i++) {
                     Description : <?= $res[$i]['product_description']?>
                 </p>
                 <p>
-                    Date Création : <?= $res[$i]['creation_date']?>
+                    Creation Date : <?= $res[$i]['creation_date']?>
                 </p>
                 <div class="product_price">
                     <div class="grid-price">
@@ -36,7 +36,3 @@ for ($i=0; $i < count($res); $i++) {
 <?php endif ?>
 <?php } ?> 
 </div>
-<!-- /banner-bottom -->
-
-</body>
-</html>

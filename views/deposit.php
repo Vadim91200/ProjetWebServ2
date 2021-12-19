@@ -2,7 +2,7 @@
         <div class="container">
             <div class="content-grid">
                 <div class="content-bottom">
-                    <form method="post" url="/upload-picture" enctype="multipart/form-data">
+                    <form action="index.php?controller=proccess_deposit" method="post" url="/upload-picture" enctype="multipart/form-data">
                         <div class="field-group">
                             <input name="picture" type="file" accept=".png" required="">
                         </div>
@@ -38,7 +38,3 @@
             </div>
         </div>
     </section>
-
-</body>
-
-</html>

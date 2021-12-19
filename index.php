@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 function format($string) {
     return strtolower(str_replace(['.png', ' '], '', $string));
 }
@@ -12,7 +11,7 @@ function getproduct(){
     $res = $stmt->fetchAll();
 
     for ($i=0; $i < count($res); $i++) { 
-        $res[$i]["picture"] = "images/".format($res[$i]["product_name"]).".png";
+        $res[$i]["picture"] = "upload-picture/".format($res[$i]["product_name"]).".png";
     }
 
     return $res;
@@ -25,10 +24,11 @@ function render($view) {
     echo '<!--';
     print_r($_SESSION);
     echo '-->';
+    require('views/footer.php');
 }
 
 function e($s) {
-    return ($s);
+    return htmlentities($s);
 }
 
 if(!isset($_GET['controller'])) {
