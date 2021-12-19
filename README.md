@@ -8,7 +8,7 @@
 - Install https://www.sqlite.org/download.html including the command-line shell https://www.sqlite.org/2021/sqlite-tools-win32-x86-3360000.zip (but we already did that for you so you have nothing to do)
 
 **Initialise database for the first time**  :
-connect to the url http://projetwebserv2/src/init_database
+connect to the url http://projetwebserv2/init_database
 
 
 **To Sign up** : 
