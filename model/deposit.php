@@ -10,8 +10,9 @@
     $Query->execute([$productName, $productDescription, $productPrice, $productCreationDate]);
 
     if (isset($mobile["picture"])) {    
-        $root_picture = "images/".format($productName).".png";
+        $root_picture = "upload-picture/".format($productName).".png";
 
         move_uploaded_file($mobile["picture"]["tmp_name"], $root_picture);
+        header('Location: index.php?controller=home');
     }
 ?>
