@@ -7,7 +7,7 @@
                     <span class="fa fa-user-circle-o"></span>
                 </div>
                 <div class="content-bottom">
-                    <form action="index.php?controller=proccess_register" method="post">
+                    <form action="index.php?controller=register&action=process" method="post">
                         <div class="field-group">
                             
                             <div class="content-input-field">

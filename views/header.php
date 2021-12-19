@@ -45,8 +45,8 @@
                     Welcome <?= e($_SESSION['name']); ?>
                     <a href="index.php?controller=home" class="btn"><?php $_SESSION['name'] = NULL ?> <span class="fa fa-pencil-square-o"></span> Disconnect </a>
                 </div>
-    <?php
-} else { ?>
+            <?php
+            } else { ?>
                 <div class="forms ml-auto">
                     <a href="index.php?controller=login" class="btn"><span class="fa fa-user-circle-o"></span> Sign In</a>
                     <a href="index.php?controller=register" class="btn"><span class="fa fa-pencil-square-o"></span> Sign Up</a>
