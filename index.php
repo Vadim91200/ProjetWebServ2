@@ -11,7 +11,7 @@ function getproduct(){
     $res = $stmt->fetchAll();
 
     for ($i=0; $i < count($res); $i++) { 
-        $res[$i]["picture"] = "upload-picture/".format($res[$i]["product_name"]).".png";
+        $res[$i]["picture"] = "images/upload-picture/".format($res[$i]["product_name"]).".png";
     }
 
     return $res;
