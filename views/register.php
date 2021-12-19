@@ -1,4 +1,4 @@
-    <!-- //banner-->
+ <!-- //banner-->
     <!--/login -->
     <section class="banner-bottom py-5">
         <div class="container">
@@ -7,7 +7,7 @@
                     <span class="fa fa-user-circle-o"></span>
                 </div>
                 <div class="content-bottom">
-                    <form action="index.php?controller=proccess_register" method="post">
+                    <form action="index.php?controller=register&action=process" method="post">
                         <div class="field-group">
                             
                             <div class="content-input-field">
@@ -21,13 +21,11 @@
                             </div>
                         </div>
                         <div class="field-group">
-
                             <div class="content-input-field">
                                 <input name="username" id="text3" type="email" value="" placeholder="User Email" required="">
                             </div>
                         </div>
                         <div class="field-group">
-
                             <div class="content-input-field">
                                 <input name="userphone" id="text4" type="text" value="" placeholder="UserPhone" required="">
                             </div>
@@ -41,7 +39,6 @@
                             <button type="submit" class="btn">Sign Up</button>
                         </div>
                         <div class="list-login-bottom text-center mt-lg-5 mt-4">
-
                             <a href="#" class="">By clicking Signup, I agree to your terms</a>
                         </div>
                     </form>

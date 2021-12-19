@@ -1,4 +1,4 @@
-    <!-- //banner-->
+ <!-- //banner-->
     <!--/login -->
     <section class="banner-bottom py-5">
         <div class="container">
@@ -7,7 +7,7 @@
                     <span class="fa fa-unlock-alt"></span>
                 </div>
                 <div class="content-bottom">
-                    <form action="index.php?controller=proccess_login" method="post">
+                    <form action="index.php?controller=login&action=process" method="post">
                         <div class="field-group">
                             <div class="content-input-field">
                                 <input name="username" id="username" type="text" value="" placeholder="User Name" required="">

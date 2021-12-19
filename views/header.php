@@ -38,15 +38,15 @@
                 <div id="logo">
                     <h1> <a href="index.php?controller=home"><span class="log-w3pvt">B</span>aggage</a> <label class="sub-des">Online Store</label></h1>
                 </div>
-                <?php if(isset($_SESSION['name']) && $_SESSION['name'] != null) {
-                ?>
-    
-            <div class="forms ml-auto">
-                    Welcome <?= e($_SESSION['name']); ?>
-                    <a href="index.php?controller=home" class="btn"><?php $_SESSION['name'] = NULL ?> <span class="fa fa-pencil-square-o"></span> Disconnect </a>
-                </div>
-    <?php
-} else { ?>
+                <?php if (isset($_SESSION['user']['name']) && $_SESSION['user']['name'] != null) {
+        ?>
+
+    <div class="forms ml-auto">
+            Welcome <?= e($_SESSION['user']['name']); ?>
+            <a href="index.php?controller=disconnect" class="btn"> <span class="fa fa-pencil-square-o"></span> Disconnect </a>
+        </div>
+<?php
+} else {?>
                 <div class="forms ml-auto">
                     <a href="index.php?controller=login" class="btn"><span class="fa fa-user-circle-o"></span> Sign In</a>
                     <a href="index.php?controller=register" class="btn"><span class="fa fa-pencil-square-o"></span> Sign Up</a>
