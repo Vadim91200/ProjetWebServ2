@@ -5,12 +5,12 @@ $stmt->execute([$_POST['username']]);
 $res = $stmt->fetch();
 
 if ($res === null) {
-    header('Location: index.php?controller=login&error=bad_login');
+    header('Location: index.php?controller=login');
     exit;
 }
 
-if (password_verify($res['password'], $_POST['password'])) {
-    header('Location: index.php?controller=login&error=bad_password');
+if (!password_verify($_POST['password'], $res['password'])) {
+    header('Location: index.php?controller=login');
     exit;
 }
 

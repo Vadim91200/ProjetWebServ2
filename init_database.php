@@ -16,7 +16,6 @@ $pdo->query('CREATE TABLE user
 $pdo->query('CREATE TABLE product
 (
     id INTEGER PRIMARY KEY NOT NULL,
-    product_image VARCHAR(100) NOT NULL,
     product_name VARCHAR(100) NOT NULL,
     product_description VARCHAR(255),
     product_price INT NOT NULL,

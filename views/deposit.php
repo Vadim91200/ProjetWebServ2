@@ -2,9 +2,9 @@
         <div class="container">
             <div class="content-grid">
                 <div class="content-bottom">
-                    <form action="index.php?controller=proccess_deposit" method="post" url="/upload-picture" enctype="multipart/form-data">
+                    <form method="post" url="/upload-picture" enctype="multipart/form-data">
                         <div class="field-group">
-                            <input name="picture" type="file" onchange="previewPicture(this)" accept=".jpg, .png, .gif" required="">
+                            <input name="picture" type="file" accept=".png" required="">
                         </div>
                     
                         <div class="field-group">
@@ -21,7 +21,7 @@
                         <div class="field-group">
 
                             <div class="content-input-field">
-                                <input name="ProductPrice" id="text3" type="text" value="" placeholder="Product Price" required="">
+                                <input name="ProductPrice" id="text3" type="number" value="" placeholder="Product Price" required="">
                             </div>
                         </div>
                         <div class="field-group">
@@ -31,7 +31,7 @@
                             </div>
                         </div>
                         <div class="content-input-field">
-                            <button type="submit" class="btn">Deposit</button>
+                            <button type="submit" name="btnDeposit" class="btn">Deposit</button>
                         </div>
                     </form>
                 </div>
