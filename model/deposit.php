@@ -13,5 +13,6 @@
         $root_picture = "upload-picture/".format($productName).".png";
 
         move_uploaded_file($mobile["picture"]["tmp_name"], $root_picture);
+        header('Location: index.php?controller=home');
     }
 ?>
